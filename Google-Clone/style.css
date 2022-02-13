@@ -83,6 +83,9 @@ header{
     font-size: 16px;
     border: none;
 }
+.search-bar input:focus{
+    outline: none;
+}
 .search-btns{
     margin-top: 20px;
 }
@@ -158,4 +161,22 @@ footer{
 }
 .lower-right-footer li{
     margin-left: 15px;
+}
+/* mobile and tablet */
+@media only screen and (max-width: 650px){
+    /* search bar */
+    .search-bar{
+        width: 90%;
+    }
+    /* footer */
+    footer{
+        height: 150px;
+    }
+    .upper-footer{
+        height: 50px;
+    }
+    .lower-footer{
+        height: 100px;
+        flex-direction: column;
+    }
 }
